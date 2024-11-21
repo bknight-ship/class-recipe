@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 
-export const errorhandlerWrapper = (
+export const errorHandlerWrapper = (
   func: (req: Request, res: Response, next: NextFunction) => void
 ) => {
   return async (req: Request, res: Response, next: NextFunction) => {
